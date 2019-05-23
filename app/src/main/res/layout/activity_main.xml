@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etInput"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:hint="Enter Text Here"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareqr"
+        android:gravity="center"
+        android:hint="Email Address to send QR to"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/btnPicker"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/etInput"-->
+        <!--android:layout_marginTop="9dp"-->
+        <!--android:text="From Date and Time" />-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/from"-->
+        <!--android:gravity="left"-->
+        <!--android:layout_below="@+id/btnPicker"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/btnPickerto"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/btnPicker"-->
+        <!--android:layout_marginTop="29dp"-->
+        <!--android:text="To Date and Time" />-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/to"-->
+        <!--android:gravity="left"-->
+        <!--android:layout_marginVertical="10dp"-->
+        <!--android:layout_below="@+id/btnPickerto"/>-->
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etInput"
+        android:layout_marginTop="29dp"
+        android:text="generate qr code" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnCreate"/>
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:gravity="center"
+        android:layout_below="@+id/shareqr"/>
+
+    <LinearLayout
+        android:id="@+id/idForSaveView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</RelativeLayout>
